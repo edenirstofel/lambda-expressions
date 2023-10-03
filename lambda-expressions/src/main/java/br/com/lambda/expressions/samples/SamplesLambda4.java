@@ -17,8 +17,8 @@ public class SamplesLambda4 {
 		fruit.add("strawberry");
 		
 		//filter all names starting with a
-		fruit.stream().filter(l -> l.toUpperCase().startsWith("a")).forEach(System.out::print);
-		fruit.stream().filter(l -> l.length() > 4).forEach(System.out::print);
+		fruit.stream().filter(l -> l.toUpperCase().startsWith("A")).forEach(System.out::print);
+		fruit.stream().filter(l -> l.length() >5 ).forEach(System.out::print);
 
 		//@// @formatter:off
 		 ArrayList<Integer> collect = (ArrayList<Integer>) fruit.stream().map(l -> l.length()).collect(Collectors.toList());
@@ -27,7 +27,7 @@ public class SamplesLambda4 {
 		collect.forEach(System.out::print);
 
 		
-		//https://receitasdecodigo.com.br/java/exemplos-de-utilizacao-de-lambdas-expressions
+		
 		
 	}
 }
